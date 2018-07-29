@@ -7,7 +7,7 @@ To interact with the dapp, the [MetaMask](https://metamask.io/) browser extensio
 Currently the contract is deployed on the ropsten testnet and you can access the frontend [here](https://rebrand.ly/simpleElectionDapp). 
 
 ## Running Locally
-With [Truffle]() you can also run this on a local blockchain, I reccomend [Ganache](). I'm not going to go over the procedure here, given that there are plenty of tutorials explaining it.
+With [Truffle](https://truffleframework.com/) you can also run this on a local blockchain, I reccomend [Ganache](https://truffleframework.com/ganache). I'm not going to go over the procedure here, given that there are plenty of tutorials explaining it.
 
 ## Testing
 I have also written javascript tests to assure the voting contract works as expected. Use `truffle test` to run the voting.js unit test which is under `test/` .
