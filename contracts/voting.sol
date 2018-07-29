@@ -1,6 +1,6 @@
 pragma solidity ^0.4.23;
 
-import "./safemath.sol";
+import "./safemathint.sol";
 import "./ownable.sol";
 
 // TODO maybe add modifier so that a candidate cannot vote himself
@@ -9,7 +9,7 @@ import "./ownable.sol";
 /// @title Simple voting dapp
 /// @author spirosbax
 contract voting is Ownable {
-    using SafeMath for uint;
+    using SafeMathInt for int256;
 
     /* this is where we store our candidates and match the with ids
     it is public so everyone can see every candidates votes,
@@ -54,9 +54,9 @@ contract voting is Ownable {
 
     function _voteForCandidate(bytes32 _name) internal candidateExists(_name) {
         if (candidateToVotes[_name] == -1) {
-            candidateToVotes[_name]+=2;
+            candidateToVotes[_name] = candidateToVotes[_name].add(2);
         } else {
-            candidateToVotes[_name]++;
+            candidateToVotes[_name] = candidateToVotes[_name].add(1);
         }
         emit VotedCandidate(_name);
     }

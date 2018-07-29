@@ -3,10 +3,6 @@
   "version": "1.0.0",
   "description": "Simple voting contract",
   "main": "index.js",
-  "repository": {
-    "url": "https://github.com/spirosbax/simpleVotingSmartContact",
-    "type": "git"
-  },
   "scripts": {
     "bundle": "browserify app.js -o bundle.js",
     "watch": "watchify app.js -o bundle.js --debug"

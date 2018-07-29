@@ -1,4 +1,4 @@
-var contractAddress = '0xd025891b3ebd8438f81cb4a0d168c42fb9cd073f'
+var contractAddress = '0xd5937b313c1356b532afa14f9fa8cd47606fdc12'
 var votingInstance
 
 $.notify.defaults({
